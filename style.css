@@ -1,0 +1,283 @@
+body {
+  background-color: #9c9cf2;
+}
+
+#about {
+  text-align: center;
+}
+
+#about h1 {
+  color: red;
+  text-align: center;
+  font-weight: bolder;
+  font-family: "Indie Flower", cursive;
+  animation: changeColor 3s infinite;
+}
+
+@keyframes changeColor {
+  0% {
+    color: red;
+  }
+
+  25% {
+    color: yellow;
+  }
+
+  50% {
+    color: green;
+  }
+
+  75% {
+    color: blue;
+  }
+
+  100% {
+    color: red;
+  }
+}
+
+#about img {
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  box-shadow: 10px 10px 10px #dd7373;
+
+}
+
+#about img:hover {
+  scale: 1.2;
+}
+
+#about p {
+  color: #f2a6a6;
+  font-size: 24px;
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+#city {
+  background-color: yellow;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#city h1 {
+  font-family: "Indie Flower", cursive;
+  color: blue;
+  padding-top: 20px;
+}
+
+#city p {
+  color: #385dcc;
+  font-size: 24px;
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+#interest {
+  background-color: #69f29d;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#interest h1 {
+  color: #c4fa00;
+  padding-top: 20px;
+  font-family: "Indie Flower", cursive;
+}
+
+#interest .picture-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#interest .picture-items img {
+  width: 17%;
+  height: 250px;
+  border-radius: 10px;
+  margin: 10px;
+  border: 4px dashed #87CEFA;
+  box-shadow: 10px 10px 10px #ffffff;
+  ;
+}
+
+#interest .picture-items img:hover {
+  /* scale: 1.2; */
+  transform: translateY(-16px);
+}
+
+
+#interest span {
+  color: #f2a6a6;
+  background-color: whitesmoke;
+  font-size: 30px;
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#interest p {
+  color: #9a5b5b;
+  font-size: 24px;
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*--- project start---*/
+#project {
+  background-color: #2d2acf;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#project h1 {
+  color: #0ce91b;
+  padding-top: 20px;
+  font-family: "Pacifico", cursive;
+}
+
+#project h5 {
+  color: #ffffff;
+  padding-top: 20px;
+  font-family: "Bodoni Moda SC", serif;
+  font-size: 25px;
+}
+
+.picture-items-box {
+  display: flex;
+  width: 45%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.picture-items-box .picture-items {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  margin: 10px;
+  border: 4px dashed #87CEFA;
+  box-shadow: 10px 10px 10px #ffffff;
+  position: relative;
+}
+
+.picture-items-box .picture-items:hover .overplay {
+  display: flex;
+}
+
+.picture-items-box .picture-items:hover .text-description {
+  display: block;
+  color: #31bf31;
+}
+
+.picture-items-box .picture-items img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: fixed;
+}
+
+.overplay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(240, 193, 193, 0.5);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.text-description {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  color: green;
+}
+
+.text-description hr {
+  width: 80%;
+}
+
+.text-description p {
+  color: green;
+  font-size: 24px;
+}
+
+.row-showing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#project p {
+  color: #ffffff;
+  padding-top: 20px;
+  font-family: 'Helvetica Neue';
+  font-size: 25px;
+}
+
+/*--- project end---*/
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  color: #ea3939;
+  font-size: 25px;
+  font-weight: bolder;
+  font-family: 'Helvetica Neue';
+}
+
+
+/* Menu */
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  margin-left: auto;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f23636;
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: "Pacifico", cursive;
+}
+
+nav ul li a:hover {
+  color: #d8ee6d;
+  background-color: whitesmoke;
+  border-radius: 30px;
+}
+
+nav ul img {
+  width: 50%;
+  height: 50px;
+  border: 3px solid #ed2c2c;
+  border-radius: 10px;
+}
